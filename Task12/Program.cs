@@ -15,7 +15,7 @@ Div(firstNum, secondNum);
 
 void Div(int Num1, int Num2)
 {
-    int result = Num1 % Num2;
+    int result = Num1 % Num2; // % означает num1 -num2 * на целое число которое даст ближайшее к  num1
     if (result == 0) System.Console.WriteLine($"Число {Num1} кратно {Num2}");
     else System.Console.WriteLine($"Число {Num1} не кратно {Num2}, остаток от деления равен {result}");
 
