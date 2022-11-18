@@ -7,15 +7,9 @@
 Console.WriteLine("Введите число и является этот день выходным: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine(Days(number) ? "ДА" : "НЕТ");
-
 bool Days(int num)
-
 {
-    if (number < 1 || number > 8)
-    {
-        Console.WriteLine("Не существует такой даты!");
-    }
     return (number == 6 || number == 7);
 }
+Console.WriteLine(Days(number) ? "ДА" : "НЕТ");
 

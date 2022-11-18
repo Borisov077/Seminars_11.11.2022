@@ -4,17 +4,21 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
+
 Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
-
 Console.WriteLine(ThirdDigit(number));
 
 int ThirdDigit(int num)
+
 {
+    if (num < 100) Console.WriteLine("Третьей цифры нет");
     while (num > 999) num = num / 10;
     return num = num % 10;
+
 }
-// if (number < 100)
-// {
-//     Console.WriteLine("Третьей цифры нет");
-// }
+
+
+
+
+
