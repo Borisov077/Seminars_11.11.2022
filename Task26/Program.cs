@@ -28,3 +28,6 @@ Console.WriteLine($"Количество цифр в числе {number} ---> {r
 
 
 
+
+
+
