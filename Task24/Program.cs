@@ -6,6 +6,7 @@
 // 4 -> 10
 // 8 -> 36
 
+
 Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 

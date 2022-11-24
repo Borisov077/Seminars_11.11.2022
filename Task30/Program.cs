@@ -13,7 +13,6 @@ void RandomArray(int[] array)
         array[i] = rnd.Next(0, 2);
     }
 }
-
 void PrintArray(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
@@ -23,6 +22,5 @@ void PrintArray(int[] array)
 }
 
 RandomArray(array);
-
 // Console.WriteLine(string.Join(" ", array));
 PrintArray(array);
