@@ -25,20 +25,18 @@ void PrintArray(int[] arr)
     }
     Console.WriteLine("]");
 }
-
-void PrintNegativArray(int[] arr)
+int[] array = CreateArrayRndInt(10, -9, 9);
+void NegativArray(int[] arr)
 {
-    Console.Write("[");
+
     for (int i = 0; i < arr.Length; i++)
     {
-        if (i < arr.Length - 1) Console.Write($"{arr[i] * -1}, ");
-        else Console.Write($"{arr[i] * -1}");
+        arr[i] *= -1;
     }
-    Console.WriteLine("]");
 }
 
 
 
-int[] array = CreateArrayRndInt(10, -9, 9);
 PrintArray(array);
-PrintNegativArray(arr: array);
+NegativArray(arr: array);
+PrintArray(array);
