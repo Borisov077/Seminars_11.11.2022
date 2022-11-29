@@ -11,7 +11,6 @@ double[] CreateArrayRndDouble(int size, int min, int max)
     for (int i = 0; i < arr.Length; i++)
     {
 
-        // arr[i] = Math.Round(3.45, 1, MidpointRounding.AwayFromZero);
         arr[i] = Math.Round(rnd.NextDouble() * (max - min) + min, 1);
     }
     return arr;
