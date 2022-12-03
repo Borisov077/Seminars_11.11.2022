@@ -36,5 +36,5 @@ void PrintMatrix(double[,] matrix)
     }
 }
 
-double[,] array = CreateMatrixRnDouble(3, 4, 0, 10);
+double[,] array = CreateMatrixRnDouble(3, 4, -5, 10);
 PrintMatrix(array);
