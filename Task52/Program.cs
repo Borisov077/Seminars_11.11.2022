@@ -37,6 +37,34 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
+double[] ArithmeticNum(int[,] matrix)
+{
+    double[] ArithmeticNumNewMassiv = new double[matrix.GetLength(1)];
+    for (int j = 0; j < matrix.GetLength(1); j++)
+    {
+        double summa = 0;
+        for (int i = 0; i < matrix.GetLength(0); i++)
+        {
+            summa += matrix[i, j];
+        }
+        ArithmeticNumNewMassiv[j] = Math.Round(summa / matrix.GetLength(0), 2);
+    }
+    return ArithmeticNumNewMassiv;
+}
 
+void PrintArray(double[] arr)
+{
+    Console.Write("[");
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (i < arr.Length - 1) Console.Write($"{arr[i]}, ");
+        else Console.Write($"{arr[i]}");
+    }
+    Console.WriteLine("]");
+}
 int[,] array = CreateMatrixRndInt(3, 4, 1, 10);
 PrintMatrix(array);
+Console.WriteLine();
+double[] arr = ArithmeticNum(array);
+Console.Write("Среднее арифметическое элементов в столбцах: ");
+PrintArray(arr);

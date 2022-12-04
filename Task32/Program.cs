@@ -25,7 +25,7 @@ void PrintArray(int[] arr)
     }
     Console.WriteLine("]");
 }
-int[] array = CreateArrayRndInt(10, -9, 9);
+
 void NegativArray(int[] arr)
 {
 
@@ -36,7 +36,7 @@ void NegativArray(int[] arr)
 }
 
 
-
+int[] array = CreateArrayRndInt(10, -9, 9);
 PrintArray(array);
 NegativArray(arr: array);
 PrintArray(array);
